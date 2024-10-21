@@ -2,7 +2,7 @@ package day01;
 
 public class T02_ReverseSentence {
     public static void main(String[] args) {
-        String str = "I am SDET";
+        String str = "java coding interview"; // -> SDET am I
         String[] strArr = str.split(" ");
         String reversed = "";
 

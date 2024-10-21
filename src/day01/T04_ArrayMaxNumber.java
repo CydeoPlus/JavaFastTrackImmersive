@@ -7,6 +7,8 @@ public class T04_ArrayMaxNumber {
         int[] nums  = {4,1,5,2, 33, 21};
         System.out.println("max number = " + maxNum(nums));
         System.out.println("max number = " + maxNumV2(nums));
+
+        System.out.println(Arrays.stream(nums).max().getAsInt());
     }
 
     public static int maxNum(int[] nums) {

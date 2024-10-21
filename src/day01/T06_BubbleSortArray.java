@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class T06_BubbleSortArray {
     public static void main(String[] args) {
         int[] nums  = {5,21,3, 33 , 9};
+        //Arrays.sort(nums);
         System.out.println(Arrays.toString(bubbleSort(nums)));
     }
 
