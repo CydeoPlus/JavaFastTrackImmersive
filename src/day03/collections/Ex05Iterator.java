@@ -10,7 +10,7 @@ public class Ex05Iterator {
         // with the for each loop
         for (String each : names) {
             System.out.println(each);
-            //names.remove(each); =>ConcurrentModificationException
+            //names.remove(each); //=>ConcurrentModificationException
         }
         System.out.println();
 
