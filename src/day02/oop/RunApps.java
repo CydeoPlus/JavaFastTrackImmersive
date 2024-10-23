@@ -8,6 +8,16 @@ public class RunApps {
 
         Discord discord = new Discord();
         discord.launch();
+
+        App app = new Discord(); //-> Polymorphism. Parent --> Child Object
+        App app2 = new Instagram();
+        app.launch();
+        app2.launch();
+        //app2.createStory(); Error , not accessible
+        Stories storiesApp = new Instagram();
+        storiesApp.createStory();
+        storiesApp.viewStory();
+
         Instagram instagram = new Instagram();
         instagram.launch();
 
