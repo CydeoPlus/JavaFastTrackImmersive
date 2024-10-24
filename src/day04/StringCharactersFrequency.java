@@ -2,6 +2,7 @@ package day04;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class StringCharactersFrequency {
     public static void main(String[] args) {
@@ -19,5 +20,14 @@ public class StringCharactersFrequency {
 
         System.out.println(map);
 
+
+        //stream:
+        String input = "hello world";
+
+        Map<Character, Long> frequencyMap = input.chars() // Convert string to IntStream
+                .mapToObj(c -> (char) c) // Convert int to Character
+                .collect(Collectors.groupingBy(c -> c, Collectors.counting())); // Group by character and count
+
+        System.out.println(frequencyMap);
     }
 }

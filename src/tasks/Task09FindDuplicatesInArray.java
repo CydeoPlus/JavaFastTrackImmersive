@@ -36,7 +36,7 @@ public class Task09FindDuplicatesInArray {
                     count++;
                 }
             }
-            //if duplicate found then add to dupArray
+            //if unique found then add to uniqueArr
             if(count == 1) {
                 checked.add(each);
                 uniqueArr[index++] = each;

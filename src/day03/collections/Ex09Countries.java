@@ -7,6 +7,7 @@ public class Ex09Countries {
 
         // key - countries - String
         // value = cities - List<String>
+        List<Map<String, String>> listOfMaps = new ArrayList<>();
         Map<String, List<String>> countries = new HashMap<>();
         countries.put("United States", new ArrayList<>(Arrays.asList("Chicago", "Dallas", "Irvine", "San Diego", "New York", "Philadelphia", "Madison")));
 

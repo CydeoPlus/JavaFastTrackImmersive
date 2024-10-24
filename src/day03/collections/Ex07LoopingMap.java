@@ -34,5 +34,5 @@ public class Ex07LoopingMap {
         }
 
         System.out.println(map.size());
-    }
+     }
 }
