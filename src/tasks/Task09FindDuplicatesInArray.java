@@ -20,7 +20,7 @@ public class Task09FindDuplicatesInArray {
         //track nums that we already checked
         List<Integer> checked = new ArrayList<>();
         //array to store values that we know has duplicates
-        int[] dupArr = new int[nums.length];
+        int[] uniqueArr = new int[nums.length];
         int index = 0;
         for(int each : nums) {
 
@@ -39,11 +39,11 @@ public class Task09FindDuplicatesInArray {
             //if duplicate found then add to dupArray
             if(count == 1) {
                 checked.add(each);
-                dupArr[index++] = each;
+                uniqueArr[index++] = each;
             }
         }
         //return only duplicate values part.
-        return Arrays.copyOf(dupArr, checked.size());
+        return Arrays.copyOf(uniqueArr, checked.size());
     }
 
     public static int[] findDuplicates(int[] nums) {
