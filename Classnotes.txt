@@ -4,7 +4,11 @@ Day 01:
 How is your java experience?How do you rate your java skill? Do you have experience with java? etc
 
 I have N years of java programming experience. I used java for building automation frameworks and test automation development.
-I am comfortable with core java, flow control, string manipulation, collections, Object oriented programming, exception handling, debugging using java.
+I am comfortable with core java, flow control, string manipulation, collections, Object oriented programming,
+exception handling, debugging using java.
+
+If there is already existing automation code for the project, I am comfortable with learning it quickly and start contributing.
+
 
 Why did you choose java for automation?
 
@@ -14,13 +18,33 @@ It has many open source libraries for test automation. JUnit, TestNG, Selenium ,
 It is a popular language for web backend , mobile development, so using java for automation is makes it in sync with developer environment.
 
 Which java version?
-I started with java 8 mostly in my automation projects. Then Switched to java 11/17 in current project.
+I started with java 8 mostly in my automation projects. Then Switched to java 17 in current project.
 
 Web Application:
 	-> Front End -> Html, CSS, javascript(react, angular...)
 	-> Back End -> Java (Spring framework)
 
 	So it makes it in sync if we use java for test automation as well.
+
+=======================================
+Java has automatic memory management.
+Memory is divided to Stack and Heap areas
+
+Stack: References, method frames, local variables
+Heap: all objects and also String pool for string objects
+Heap types:
+    In Java, heap memory is divided into different generations to manage objects efficiently during the garbage collection process.
+    The main types are:
+    	1.	Young Generation: This is where new objects are allocated and collected quickly. It’s further divided into:
+    	•	Eden Space: New objects are initially allocated here.
+    	•	Survivor Spaces (S1 and S2): Objects that survive garbage collection in Eden are moved here.
+    	2.	Old (Tenured) Generation: These are long-lived objects, and garbage collection happens less frequently but takes more time.
+    	3.	Metaspace (formerly PermGen): Stores class metadata, method data, and static variables.
+
+
+    Efficient memory management involves tuning these spaces using JVM options to optimize performance and prevent issues like OutOfMemoryError.
+
+========================================
 
 Jdk, jre, jvm?
 

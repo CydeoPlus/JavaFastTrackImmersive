@@ -13,4 +13,13 @@ public class T01_StringReverse {
         }
         System.out.println("reversedStr = " + reversedStr);
     }
+
+    public static String reverseStr(String str) {
+        String reversedStr = "";
+        for (int i = str.length() - 1; i >= 0; i--) {
+            reversedStr += str.charAt(i);
+        }
+        return reversedStr;
+    }
+
 }
