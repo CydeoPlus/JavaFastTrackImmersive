@@ -2,7 +2,8 @@ package day01.inner;
 
 public class T08_1stNotRepeatedChar {
     public static void main(String[] args) {
-
+        System.out.println(firstNonRepeated("aabccdddqjj"));
+        System.out.println(firstNonRepeated("aabbccdddqqjj"));
     }
 
     public static char firstNonRepeated(String str) {
