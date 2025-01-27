@@ -45,7 +45,11 @@ Heap types:
     Efficient memory management involves tuning these spaces using JVM options to optimize performance and prevent issues like OutOfMemoryError.
 
 ========================================
+Write a java code that counts how many c's there are in the word "consistency"
+Write a method it takes 2 parameters(String word, String serchedTerm)
+and that return number of given searchTerm repeated in given word
 
+=========================================
 Jdk, jre, jvm?
 
 Jdk - Java dev kit -> is needed for java development. It contains compiler and JRE, JVM.
