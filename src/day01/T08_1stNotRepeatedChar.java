@@ -1,4 +1,4 @@
-package day01.inner;
+package day01;
 
 public class T08_1stNotRepeatedChar {
     public static void main(String[] args) {

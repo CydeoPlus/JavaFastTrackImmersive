@@ -8,7 +8,7 @@ public class T03_ArrayLastIndex {
         int[] nums  = {4,1,5,2,33};
         System.out.println("size = " + nums.length);
 
-        System.out.println("last elemement = " + nums[nums.length - 1]);
+        System.out.println("last element = " + nums[nums.length - 1]);
 
         List<Integer> numsList = new ArrayList<>(List.of(43,554,13,54));
         System.out.println("last in list = " + numsList.get(numsList.size()-1));
