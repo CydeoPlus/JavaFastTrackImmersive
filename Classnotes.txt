@@ -49,6 +49,10 @@ Write a java code that counts how many c's there are in the word "consistency"
 Write a method it takes 2 parameters(String word, String serchedTerm)
 and that return number of given searchTerm repeated in given word
 
+========================================
+
+write a method that returns 1st non-repeated character in a string.
+
 =========================================
 Jdk, jre, jvm?
 

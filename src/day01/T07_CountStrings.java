@@ -18,7 +18,7 @@ public class T07_CountStrings {
     }
 
     public static int countStrings2(String str, String target) {
-        if (str == null || !str.contains(target)) return 0;
+        if (str == null || target == null || !str.contains(target)) return 0;
 
         int count = 0;
         for (int i = 0; i < str.length()-target.length(); i++) {
