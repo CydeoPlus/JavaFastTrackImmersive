@@ -1,5 +1,7 @@
 package day01.inner;
 
+import day02.Book;
+
 import java.util.ArrayList;
 
 public class HelloWorld {
@@ -32,6 +34,7 @@ public class HelloWorld {
         String str4 = null;
         System.out.println(str3.length());
         System.out.println(str4.length());
+
     }
 
     public static void m1() {

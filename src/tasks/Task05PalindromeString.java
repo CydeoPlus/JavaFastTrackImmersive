@@ -1,11 +1,14 @@
 package tasks;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 public class Task05PalindromeString {
+
+
     public static void main(String[] args) {
         String str ="saippuakivikauppias";
         //shortest using stringbuilder reverse method
@@ -46,6 +49,7 @@ public class Task05PalindromeString {
 
         System.out.println(isPalindrome("Ci,vi@c%"));
 
+
     }
 //"A man, a plan, a canal: Panama"
     public static boolean isPalindromeStringV1(String str) {
@@ -65,6 +69,7 @@ public class Task05PalindromeString {
 
         return true;
     }
+
 
     //unit test for isPalindromeStringV1() method
     @DisplayName("Palindrome valid test")

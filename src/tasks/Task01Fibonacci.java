@@ -31,7 +31,24 @@ public class Task01Fibonacci {
         }
         System.out.println(Arrays.toString(fibNums));
         System.out.println("fib number at " + count + " is " + fibNums[count-1]);
+
+        System.out.println(getFib(200));
+
     }
+
+    public static int getFib(int num) {
+        int[] fibsArr = new int[num];
+        fibsArr[0] = 0;
+        fibsArr[1] = 1;
+
+        for (int i = 2; i < num; i++) {
+            fibsArr[i] = fibsArr[i-2] + fibsArr[i-1];
+        }
+
+        return fibsArr[fibsArr.length-1];
+
+    }
+
 }
 
 

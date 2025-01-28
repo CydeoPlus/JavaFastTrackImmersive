@@ -54,6 +54,17 @@ and that return number of given searchTerm repeated in given word
 write a method that returns 1st non-repeated character in a string.
 
 =========================================
+
+Method overriding vs Overloading:
+    Overriding -> SAME method name and SAME parameters (needs inheritance)
+    Overloading -> SAME method name and DIFFERENT parameters
+
+    Overriding -> Access modifier can be SAME or MORE visible
+    Overloading -> Access modifier can be different
+
+    Overriding -> Return type must be same or sub class type(covariant)
+    Overloading -> Return type can be different
+=========================================
 Jdk, jre, jvm?
 
 Jdk - Java dev kit -> is needed for java development. It contains compiler and JRE, JVM.
