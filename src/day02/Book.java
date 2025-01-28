@@ -40,4 +40,13 @@ public class Book {
         Book.count += count;
     }
 
+    /*
+    we can have static inner class
+     */
+    static class AudioBook {
+        public static void listen() {
+            System.out.println("Listening to AudioBook in Audible");
+        }
+    }
+
 }

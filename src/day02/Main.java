@@ -16,6 +16,7 @@ public class Main {
 
         //access static variable:
         Book.publisher = "Cydeo";
+        //Book.length = 33;
 
         System.out.println(Book.publisher);
         System.out.println(book1.publisher);
@@ -30,6 +31,8 @@ public class Main {
 
         String str = "exception";
         System.out.println(str.charAt(5));
+
+        Book.AudioBook.listen();
 
     }
 }
