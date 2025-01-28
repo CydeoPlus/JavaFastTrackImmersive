@@ -1,7 +1,7 @@
 package day02.oop;
 
 public class Kia extends Car {
-    String model = "K5";
+    String model = "K5"; //variable hiding
 
     public void start() {
         System.out.println("Starting Kia " + model);
