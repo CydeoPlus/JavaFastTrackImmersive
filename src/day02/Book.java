@@ -3,7 +3,7 @@ package day02;
 public class Book {
     //instance variables
     int length;
-    String author;
+    public String author;
 
     //static variable
     static String publisher;
@@ -34,6 +34,11 @@ public class Book {
     //instance method
     public void read() {
         System.out.println("Reading book by = " + author);
+    }
+
+    public void read(int minutes) {
+        System.out.println("Reading book by = " + author);
+        int num = 10;//local
     }
 
     public static void addBooks(int count) {
