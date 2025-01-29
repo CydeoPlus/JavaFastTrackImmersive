@@ -1189,6 +1189,16 @@ Ex: NullpointerException, Outofbounds, NoSuchElement, StaleElementException,
 
 =======================
 
+UPCASTING -> Reference is parent type, and object is sub type
+List<String> list = new ArrayList<>();
+List<String> stack = new Stack<>();
+
+DOWNCASTING -> Changing the reference to sub type
+
+Stack realStack = (Stack)stack;
+
+=======================
+
 CheckedExceptions
 
 
@@ -1205,7 +1215,7 @@ try {
     e.printStackTrace();
 }
 
-2) declare using throws in method
+2) declare/ignore using throws in method
 main(String[] args) throws InterruptedException {
 =======================================
 Unchecked : StringIndexOutOfBounds Exception
@@ -1476,7 +1486,49 @@ screenshotDriver.getScreenshotAs(A);
 screenshotDriver.getScreenshotAs(B);
 
 =======================================
+Mutable -> object value can be changed
+Immutable -> Object value cannot changed once created
 
+public class M {
+    private String name;
+    public M(String name) {
+        this.name = name;
+    }
+    getName
+
+    public void setName() {
+        this.name = name;
+    }
+}
+M m1 = new M("Bob");
+m1.setName("Mike");
+
+====================
+Immutable , cannot change object value. Read only
+
+
+public class IM {
+    private String name;
+    public IM(String name) {
+        this.name = name;
+    }
+    public String getName() {
+        return name;
+    }
+}
+
+IM imObj = new IM("Bob");
+print(imObj.getName()); -> Bob
+
+imObj = new IM("Mike");
+print(imObj.getName()); -> Mike
+=======================================
+
+String is immutable sequence of characters
+StringBuilder is mutable sequence of characters
+StringBuffer is thread-safe mutable sequence of characters
+
+=======================================
 IQ: how can you handle large of amounts of Data?
 
 In my project, there are modules that generate large amount of data in different formats.

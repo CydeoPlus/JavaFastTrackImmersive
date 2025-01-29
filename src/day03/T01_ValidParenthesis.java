@@ -10,6 +10,7 @@ public class T01_ValidParenthesis {
 
         System.out.println(isValid("[)"));
         System.out.println(isValid("{}(){"));
+
     }
 
     public static boolean isValid(String str) {

@@ -24,6 +24,9 @@ public class Employee implements Comparable<Employee> {
 }
 
 class Main {
+
+    static String word;
+
     public static void main(String[] args) {
         List<Employee> employees = new ArrayList<>();
         employees.add(new Employee(3, "Alice"));
@@ -33,7 +36,13 @@ class Main {
         System.out.println(employees);
         Collections.sort(employees); // Sort by id (Comparable)
         System.out.println(employees);
+
+        System.gc();//suggesting JVM to call Garbage Collector, but no guarantee
+
+        //LinkedList<Employee> ll = (LinkedList)employees;
+        //System.out.println("ll = " + ll);
+        //classCastException
+
+        //System.out.println(word.length()); //NullPointerException
     }
 }
-
-
