@@ -64,6 +64,9 @@ Method overriding vs Overloading:
 
     Overriding -> Return type must be same or sub class type(covariant)
     Overloading -> Return type can be different
+
+    Overriding -> Dynamic polymorphism
+    Overloading -> Static polymorphism
 =========================================
 Jdk, jre, jvm?
 
@@ -1120,6 +1123,52 @@ b.m3(); -> 30
 		-> 10
 ==============================
 
+Interface vs Abstract class:
+
+-> Both are used for abstraction in Java and cannot create object
+
+-> Interface: Class can implement multiple interfaces
+-> Abstract class: Class can extend only one abstract class
+
+-> Variables:
+    Interface: public static final only
+    Abstract class: all kinds of variables, not limitation
+
+-> Methods:
+    Interface: abstract, static, default, private methods
+    Abstract class: abstract and all kind of non-abstract methods, constructors, blocks
+==============================
+
+Comparable interface needs to be implemented to your class.
+and override compareTo method.
+It is normally used to specify how your objects need to be compared to get sorted
+
+public class A implements Comparable<A> {
+    int total;
+    public A(int total) {
+        this.total = total;
+    }
+    public int compareTo(A another) {
+        return positive number when current object is greater than another
+        return negative number when current object is smaller than another
+        return 0, then both are equal
+    }
+}
+
+List<A> list = new ArrayList<>(); //etc
+list.add(new A(4));
+list.add(new A(0));
+list.add(new A(3));
+
+Collections.sort(list);
+
+Comparator interface is implemented to a different class.
+And we need to override compare method. We can create multiple classes with Comparator interface.
+
+Comparable -> compareTo method
+Comparator -> compare method
+
+==============================
 Exceptions in java:
 
 In Java exceptions are objects.

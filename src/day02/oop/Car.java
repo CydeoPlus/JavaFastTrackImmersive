@@ -3,6 +3,11 @@ package day02.oop;
 public class Car {
     String model;
 
+    public Car(String model) {
+        this.model = model;
+    }
+
+    //Encapsulation:
     private double price;
 
     public double getPrice() {
