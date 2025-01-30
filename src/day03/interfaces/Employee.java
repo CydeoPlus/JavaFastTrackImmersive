@@ -13,8 +13,8 @@ public class Employee implements Comparable<Employee> {
 
     @Override  //3 - 1 -> 2
     public int compareTo(Employee other) {
-        //return this.id - other.id;
-        return this.name.length() - other.name.length();
+        return this.id - other.id;
+        //return this.name.length() - other.name.length();
     }
 
     @Override
@@ -44,5 +44,12 @@ class Main {
         //classCastException
 
         //System.out.println(word.length()); //NullPointerException
+        
+        Map<Employee, Double> map = new TreeMap<>();
+        map.put(new Employee(3, "Alice"), 85000.0);
+        map.put(new Employee(1, "Bob"), 102000.0);
+        map.put(new Employee(2, "Charlie"), 77000.0);
+
+        System.out.println("map = " + map);
     }
 }

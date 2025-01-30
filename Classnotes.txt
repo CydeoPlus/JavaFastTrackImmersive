@@ -1537,10 +1537,12 @@ I normally analyze the data formats that i am working with, and choose the most 
 
 Pojo/model class with Java collections.
 
-If I can implement POJO classes/Model to match the data I am working with, I add model/pojo classes and use java collections to manipulate large amount of data.
+If I can implement POJO classes/Model to match the data I am working with,
+I add model/pojo classes and use java collections to manipulate large amount of data.
+List or Map collection types
 
 Data pipeline:
-JanusGraph --> Format using pojo and collections -> kafka -> Datascience team score -> kafka -> Format using pojo and collections -> elastic search database -> Client companies
+JanusGraph --> Format using pojo and collections -> kafka ->  Datascience team score -> kafka -> Format using pojo and collections -> elastic search database -> Client companies
 
 ETL pipeline -> Extract, Transform, Load
 ================================================
