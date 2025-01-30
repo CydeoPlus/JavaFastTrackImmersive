@@ -1,10 +1,9 @@
 package tasks;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-public class T10_CountOfEachCharacter {
+public class Task10_CountOfEachCharacter {
     public static void main(String[] args) {
         String str = "aabbbcdd";
 

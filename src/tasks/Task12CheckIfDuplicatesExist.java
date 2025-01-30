@@ -2,7 +2,7 @@ package tasks;
 
 import java.util.*;
 
-public class T12CheckIfDuplicatesExist {
+public class Task12CheckIfDuplicatesExist {
     public static void main(String[] args) {
         List<Integer> nums = new ArrayList<>(List.of(8, 1,1,4,3,1,5,6,5,2, 2));
         System.out.println(hasDuplicates(nums));
